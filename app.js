@@ -1,19 +1,21 @@
 const express = require('express');
 const multer = require('multer');
+const fs = require('fs');
 const path = require('path');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// Set memory storage engine for multer (file stored in memory as buffer)
-const storage = multer.memoryStorage();
-const upload = multer({ storage });
-
-// Set EJS as the view engine
+// Set the views directory and view engine to ejs
+app.set('views', path.join(__dirname, 'views')); // <-- This points to the views folder
 app.set('view engine', 'ejs');
 
 // Middleware to serve static files
-app.use(express.static('public'));
+app.use(express.static('uploads'));
+
+// Memory storage for multer (adapted)
+const storage = multer.memoryStorage();
+const upload = multer({ storage });
 
 // Function to parse the JSON data and extract the expected infolog output
 const parseInfologData = (data) => {
@@ -56,8 +58,8 @@ app.post('/upload', upload.single('file'), (req, res) => {
     }
 
     try {
-        // Parse JSON data directly from the buffer
-        const jsonData = JSON.parse(req.file.buffer.toString('utf8'));
+        // Parse JSON data from the file buffer (since we are using memory storage)
+        const jsonData = JSON.parse(req.file.buffer.toString('utf-8'));
 
         // Extract the infolog data
         const parsedData = parseInfologData(jsonData);
@@ -65,7 +67,6 @@ app.post('/upload', upload.single('file'), (req, res) => {
         // Render the result in the template
         res.render('index', { parsedData: parsedData, error: null });
     } catch (error) {
-        // Log the error and return a detailed message
         console.error("Error parsing JSON:", error);
         res.render('index', { parsedData: null, error: 'Invalid JSON format in the file. Please ensure the file contains valid JSON.' });
     }
