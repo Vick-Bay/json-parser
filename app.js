@@ -1,27 +1,19 @@
 const express = require('express');
 const multer = require('multer');
-const fs = require('fs');
 const path = require('path');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// Set storage engine for multer
-const storage = multer.diskStorage({
-    destination: './uploads/',
-    filename: (req, file, cb) => {
-        cb(null, file.fieldname + '-' + Date.now() + path.extname(file.originalname));
-    }
-});
-
-// Initialize multer
+// Set memory storage engine for multer (file stored in memory as buffer)
+const storage = multer.memoryStorage();
 const upload = multer({ storage });
 
 // Set EJS as the view engine
 app.set('view engine', 'ejs');
 
 // Middleware to serve static files
-app.use(express.static('uploads'));
+app.use(express.static('public'));
 
 // Function to parse the JSON data and extract the expected infolog output
 const parseInfologData = (data) => {
@@ -63,32 +55,23 @@ app.post('/upload', upload.single('file'), (req, res) => {
         return res.status(400).send('No file uploaded');
     }
 
-    const filePath = path.join(__dirname, 'uploads', req.file.filename);
+    try {
+        // Parse JSON data directly from the buffer
+        const jsonData = JSON.parse(req.file.buffer.toString('utf8'));
 
-    // Read the uploaded file
-    fs.readFile(filePath, 'utf8', (err, data) => {
-        if (err) {
-            return res.status(500).send('Error reading file');
-        }
+        // Extract the infolog data
+        const parsedData = parseInfologData(jsonData);
 
-        try {
-            // Parse JSON data from the file
-            const jsonData = JSON.parse(data);
-
-            // Extract the infolog data
-            const parsedData = parseInfologData(jsonData);
-
-            // Render the result in the template
-            res.render('index', { parsedData: parsedData, error: null });
-        } catch (error) {
-            // Log the error and return a detailed message
-            console.error("Error parsing JSON:", error);
-            res.render('index', { parsedData: null, error: 'Invalid JSON format in the file. Please ensure the file contains valid JSON.' });
-        }
-    });
+        // Render the result in the template
+        res.render('index', { parsedData: parsedData, error: null });
+    } catch (error) {
+        // Log the error and return a detailed message
+        console.error("Error parsing JSON:", error);
+        res.render('index', { parsedData: null, error: 'Invalid JSON format in the file. Please ensure the file contains valid JSON.' });
+    }
 });
 
 // Start the server
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
-})
+});
