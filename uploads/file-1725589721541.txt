@@ -1,0 +1,289 @@
+{
+  "$id": "1",
+  "InfologData": [
+    "Manual Order confirmation",
+    5639635978,
+    [
+      [
+        1
+      ],
+      [
+        0,
+        "Posting\tPosting\tBatch tasks created for multithreading.",
+        "@SYS310707"
+      ]
+    ],
+    "Rearranging posting data",
+    5639635979,
+    [],
+    "Generating posting data",
+    5639635980,
+    [],
+    "Generating posting data",
+    5639635981,
+    [],
+    "Generating posting data",
+    5639635982,
+    [],
+    "End multithread posting",
+    5639635983,
+    [
+      [
+        1
+      ],
+      [
+        0,
+        "Update completed",
+        "@SYS119229"
+      ]
+    ],
+    "Multithread posting",
+    5639635984,
+    [
+      [
+        1
+      ],
+      [
+        0,
+        "Posting\tOrder ID: 14Q001343-1",
+        "@SYS329914"
+      ],
+      [
+        1,
+        "Posting\tSales order: 14Q001343-1\tOrder is in credit management.",
+        "OrderInCreditMan"
+      ],
+      [
+        1,
+        "Posting\tSales order: 14Q001343-1\tNo lines for posting or quantity = 0",
+        "@SYS26185"
+      ],
+      [
+        3,
+        "Posting\tSales order: 14Q001343-1\tPosting has been canceled.",
+        "@SYS21533"
+      ],
+      [
+        0,
+        "Posting\tOrder ID: 14Q001413-1",
+        "@SYS329914"
+      ],
+      [
+        1,
+        "Posting\tSales order: 14Q001413-1\tOrder is in credit management.",
+        "OrderInCreditMan"
+      ],
+      [
+        1,
+        "Posting\tSales order: 14Q001413-1\tNo lines for posting or quantity = 0",
+        "@SYS26185"
+      ],
+      [
+        3,
+        "Posting\tSales order: 14Q001413-1\tPosting has been canceled.",
+        "@SYS21533"
+      ],
+      [
+        0,
+        "Posting\tOrder ID: 14Q001449-1",
+        "@SYS329914"
+      ],
+      [
+        1,
+        "Posting\tSales order: 14Q001449-1\tOrder is in credit management.",
+        "OrderInCreditMan"
+      ],
+      [
+        1,
+        "Posting\tSales order: 14Q001449-1\tNo lines for posting or quantity = 0",
+        "@SYS26185"
+      ],
+      [
+        3,
+        "Posting\tSales order: 14Q001449-1\tPosting has been canceled.",
+        "@SYS21533"
+      ],
+      [
+        0,
+        "Posting\tOrder ID: 14Q001464-1",
+        "@SYS329914"
+      ],
+      [
+        1,
+        "Posting\tSales order: 14Q001464-1\tOrder is in credit management.",
+        "OrderInCreditMan"
+      ],
+      [
+        1,
+        "Posting\tSales order: 14Q001464-1\tNo lines for posting or quantity = 0",
+        "@SYS26185"
+      ],
+      [
+        3,
+        "Posting\tSales order: 14Q001464-1\tPosting has been canceled.",
+        "@SYS21533"
+      ],
+      [
+        0,
+        "Posting\tOrder ID: 14S0000221",
+        "@SYS329914"
+      ],
+      [
+        3,
+        "Posting\tSales order: 14S0000221\tThe credit card number must be specified.",
+        "@SYS116746"
+      ],
+      [
+        0,
+        "Posting\tBatch task ended.",
+        "@SYS310708"
+      ],
+      [
+        3,
+        "Posting\tAn error occurred during update",
+        "@SYS78886"
+      ],
+      [
+        3,
+        "Batch task failed: Posting\tAn error occurred during update",
+        "BatchTaskFailed"
+      ]
+    ],
+    "Multithread posting",
+    5639635985,
+    [
+      [
+        1
+      ],
+      [
+        0,
+        "Posting\tOrder ID: 14S0001859",
+        "@SYS329914"
+      ],
+      [
+        3,
+        "Posting\tSales order: 14S0001859\tThe credit card number must be specified.",
+        "@SYS116746"
+      ],
+      [
+        0,
+        "Posting\tOrder ID: 14S0004886",
+        "@SYS329914"
+      ],
+      [
+        1,
+        "Posting\tSales order: 14S0004886\tOrder is in credit management.",
+        "OrderInCreditMan"
+      ],
+      [
+        1,
+        "Posting\tSales order: 14S0004886\tNo lines for posting or quantity = 0",
+        "@SYS26185"
+      ],
+      [
+        3,
+        "Posting\tSales order: 14S0004886\tPosting has been canceled.",
+        "@SYS21533"
+      ],
+      [
+        0,
+        "Posting\tOrder ID: 14S0005283",
+        "@SYS329914"
+      ],
+      [
+        1,
+        "Posting\tSales order: 14S0005283\tOrder is in credit management.",
+        "OrderInCreditMan"
+      ],
+      [
+        1,
+        "Posting\tSales order: 14S0005283\tNo lines for posting or quantity = 0",
+        "@SYS26185"
+      ],
+      [
+        3,
+        "Posting\tSales order: 14S0005283\tPosting has been canceled.",
+        "@SYS21533"
+      ],
+      [
+        0,
+        "Posting\tOrder ID: 14S0005386",
+        "@SYS329914"
+      ],
+      [
+        1,
+        "Posting\tSales order: 14S0005386\tOrder is in credit management.",
+        "OrderInCreditMan"
+      ],
+      [
+        1,
+        "Posting\tSales order: 14S0005386\tNo lines for posting or quantity = 0",
+        "@SYS26185"
+      ],
+      [
+        3,
+        "Posting\tSales order: 14S0005386\tPosting has been canceled.",
+        "@SYS21533"
+      ],
+      [
+        0,
+        "Posting\tOrder ID: 14S0005391",
+        "@SYS329914"
+      ],
+      [
+        1,
+        "Posting\tSales order: 14S0005391\tOrder is in credit management.",
+        "OrderInCreditMan"
+      ],
+      [
+        1,
+        "Posting\tSales order: 14S0005391\tNo lines for posting or quantity = 0",
+        "@SYS26185"
+      ],
+      [
+        3,
+        "Posting\tSales order: 14S0005391\tPosting has been canceled.",
+        "@SYS21533"
+      ],
+      [
+        0,
+        "Posting\tBatch task ended.",
+        "@SYS310708"
+      ]
+    ],
+    "Multithread posting",
+    5639635986,
+    [
+      [
+        1
+      ],
+      [
+        0,
+        "Posting\tOrder ID: 14S0005401",
+        "@SYS329914"
+      ],
+      [
+        1,
+        "Posting\tSales order: 14S0005401\tOrder is in credit management.",
+        "OrderInCreditMan"
+      ],
+      [
+        1,
+        "Posting\tSales order: 14S0005401\tNo lines for posting or quantity = 0",
+        "@SYS26185"
+      ],
+      [
+        3,
+        "Posting\tSales order: 14S0005401\tPosting has been canceled.",
+        "@SYS21533"
+      ],
+      [
+        0,
+        "Posting\tBatch task ended.",
+        "@SYS310708"
+      ]
+    ]
+  ],
+  "Success": true,
+  "Message": "Batch job Id : 5637309584"
+}

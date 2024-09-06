@@ -1,0 +1,170 @@
+{
+  "$id": "1",
+  "InfologData": [
+    "Return Order invoice - No EDI and line items are in delivered status-2",
+    5639634916,
+    [
+      [
+        1
+      ],
+      [
+        0,
+        "Posting\tPosting\tBatch tasks created for multithreading.",
+        "@SYS310707"
+      ]
+    ],
+    "Rearranging posting data",
+    5639634917,
+    [],
+    "Generating posting data",
+    5639634918,
+    [],
+    "Generating posting data",
+    5639634919,
+    [],
+    "End multithread posting",
+    5639634920,
+    [
+      [
+        1
+      ],
+      [
+        0,
+        "Document processing\tReport (Show invoice) with ID (SalesInvoice.Report) is successfully sent to e-mail(s): acorson@obbuilders.net",
+        "ReportPrintedToEmailSuccess"
+      ],
+      [
+        0,
+        "Document processing\tReport (Show invoice) with ID (SalesInvoice.Report) is successfully sent to e-mail(s): bill@clearwatershowerbath.com",
+        "ReportPrintedToEmailSuccess"
+      ],
+      [
+        0,
+        "Document processing\tReport (Show invoice) with ID (SalesInvoice.Report) is successfully sent to e-mail(s): acorson@obbuilders.net",
+        "ReportPrintedToEmailSuccess"
+      ],
+      [
+        0,
+        "Document processing\tReport (Show invoice) with ID (SalesInvoice.Report) is successfully sent to e-mail(s): wil@tabonogroup.com",
+        "ReportPrintedToEmailSuccess"
+      ],
+      [
+        0,
+        "Document processing\tReport (Show invoice) with ID (SalesInvoice.Report) is successfully sent to e-mail(s): acorson@obbuilders.net",
+        "ReportPrintedToEmailSuccess"
+      ],
+      [
+        0,
+        "Document processing\tReport (Show invoice) with ID (SalesInvoice.Report) is successfully sent to e-mail(s): accountspayable@avalonbay.com",
+        "ReportPrintedToEmailSuccess"
+      ],
+      [
+        1,
+        "Document processing\tTo field is not specified",
+        "ToFieldNotSpecified"
+      ],
+      [
+        3,
+        "Document processing\tSelected print destination settings (Email) are not valid",
+        "ParamsVal",
+        0,
+        []
+      ],
+      [
+        3,
+        "Document processing\tError(s) while executing report Show invoice (Report ID: SalesInvoice.Report)",
+        "ExecutingReportErrors"
+      ],
+      [
+        3,
+        "Document processing\tReport metadata >> Document: 14C00000019, Customer: C000008378, Sales order: 14S0005260",
+        "Document"
+      ],
+      [
+        3,
+        "Document processing\tAn error occurred when running report SalesInvoice.Report in batch. Contact your system administrator for more information.",
+        "ReportBatchExceptionMessage"
+      ],
+      [
+        3,
+        "Document processing\tDocument processing\tAn error occurred when running report SalesInvoice.Report in batch. Contact your system administrator for more information."
+      ],
+      [
+        3,
+        "An error occurred when running report SalesInvoice.Report in batch. Contact your system administrator for more information.",
+        "ReportBatchExceptionMessage"
+      ],
+      [
+        3,
+        "Batch task failed: An error occurred when running report SalesInvoice.Report in batch. Contact your system administrator for more information.",
+        "BatchTaskFailed"
+      ]
+    ],
+    "Multithread posting",
+    5639634921,
+    [
+      [
+        1
+      ],
+      [
+        0,
+        "Posting\tOrder ID: 14S0004078",
+        "@SYS329914"
+      ],
+      [
+        0,
+        "Posting\tOrder ID: 14S0004079",
+        "@SYS329914"
+      ],
+      [
+        0,
+        "Posting\tOrder ID: 14S0004081",
+        "@SYS329914"
+      ],
+      [
+        0,
+        "Posting\tOrder ID: 14S0005255",
+        "@SYS329914"
+      ],
+      [
+        0,
+        "Posting\tOrder ID: 14S0005260",
+        "@SYS329914"
+      ],
+      [
+        0,
+        "Posting\tBatch task ended.",
+        "@SYS310708"
+      ]
+    ],
+    "Multithread posting",
+    5639634922,
+    [
+      [
+        1
+      ],
+      [
+        0,
+        "Posting\tOrder ID: 14S0005261",
+        "@SYS329914"
+      ],
+      [
+        11,
+        "Cannot edit a record in Number sequence list (NumberSequenceList).\nAn update conflict occurred due to another user process deleting the record or changing one or more fields in the record."
+      ],
+      [
+        0,
+        "Posting\tOrder ID: 14S0005266",
+        "@SYS329914"
+      ],
+      [
+        0,
+        "Posting\tBatch task ended.",
+        "@SYS310708"
+      ]
+    ]
+  ],
+  "Success": true,
+  "Message": "Batch job Id : 5637487335"
+}
+

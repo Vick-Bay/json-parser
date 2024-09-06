@@ -1,0 +1,29 @@
+{
+  "$id": "1",
+  "InfologData": [
+    "Post journal PRJE1047710.",
+    5639630623,
+    [
+      [
+        1
+      ],
+      [
+        1,
+        "Posting - Picking list journal\tJournal: PRJE1047710\tJournal PRJE1047710 has already been posted.",
+        "@SYS25365"
+      ],
+      [
+        3,
+        "Posting - Picking list journal\tJournal: PRJE1047710\tUpdate has been canceled because of an error.",
+        "@SYS21628"
+      ],
+      [
+        3,
+        "Batch task failed: Posting - Picking list journal\tJournal: PRJE1047710\tUpdate has been canceled because of an error.",
+        "BatchTaskFailed"
+      ]
+    ]
+  ],
+  "Success": true,
+  "Message": "Batch job Id : 5637612680"
+}
